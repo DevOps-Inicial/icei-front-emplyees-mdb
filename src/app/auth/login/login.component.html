@@ -1,0 +1,22 @@
+<div class="container-fluid container-sm container-md container-lg">
+  <div class="card w-95">
+    <div class="card-body">
+      <h5 class="card-title text-center">Employee Management System</h5>
+      <hr>
+      <form [formGroup]="loginForm">
+        <div class="form-outline mb-4">
+          <input formControlName="email" type="email" id="form1Example1" class="form-control" />
+          <label class="form-label" for="form1Example1">Email</label>
+        </div>
+        <div class="form-outline mb-4">
+          <input formControlName="password" type="password" id="form1Example2" class="form-control" />
+          <label class="form-label" for="form1Example2">Password</label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" (click)="login()" class="btn btn-primary btn-block">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
